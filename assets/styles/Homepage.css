@@ -1,0 +1,446 @@
+html{
+	font-family: Helvetica Neue; 
+	background-color: white;
+	overflow-x: hidden;
+}
+
+
+/* ************************ top bar ****************************** */
+
+.topbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 25px;
+	z-index: 1;
+	background-color: white;
+}
+
+.burger-box {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	left: 0px;
+	margin: 11px;
+
+}
+
+.burger-icon {
+	width: 25px;
+    height: 5px;
+    background-color: rgb(134, 132, 132);;
+    margin: 3px 0 0 6px;
+}
+ 
+.logo {
+	display: flex;	
+	position: relative;
+    left: 58px;
+}
+
+.logo-text {
+	margin-left: 6px;
+	font-weight: bold;
+	font-size: 35px;
+
+}
+
+#the {
+	color: #F19B2B;
+	font-size: 25px;
+	position: relative;
+	left: 15px;
+    top: 5px;
+    transform: rotate(-90deg);
+}
+
+#berkeley {
+	color: #6AB3FC;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#project {
+	color: #F19B2B;
+	position: relative;
+	top: 20px;
+	right: 149px;
+	z-index: -1;
+}
+
+
+
+
+
+
+/* ************************ home picture ****************************** */
+
+
+/* How do I get the picture to fit screen?? 
+ -How do I crop??
+ -tried width: 100%;
+ -left: -8px; (just shifts it over)
+
+ How do I fix opacity for JUST the image, not all its children
+ */
+
+#home-image {
+	background-image: url("../images/BP_Day.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 620px;
+	position: relative;
+    top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	/*opacity: .71;
+	width: 104%;*/
+	left: -78px;
+	    width: 115%;
+}
+
+#front-box {
+	background-color: rgba(134, 132, 132, .85);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+    padding: 15px;
+    position: relative;
+    top: 22px;
+}
+
+.title {
+	color: #4A4642;
+	font-weight: bold;
+	font-size: 22px;
+
+	display: flex;
+	justify-content: center;
+}
+
+#home-title {
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+#sub-title {
+	color: #FFFFFF;
+	position: relative;
+    left: 22px;
+}
+
+
+
+.orange-button {
+	background-color: rgba(241, 155, 43, .74);
+	border-style: solid;
+	border-color: #F19B2B;
+	width: 60px;
+	position: relative;
+    top: 8px;
+}
+
+
+.orange-button:hover {
+	background-color: rgba(241, 155, 43, .94);
+}
+
+
+.button-text {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 30;
+
+	display: flex;
+	justify-content: center;
+}
+
+
+/* ****************** What is the berkeley project? ************** */
+.blue-bar {
+	background-color: rgba(106, 179, 252, .31);
+    position: relative;
+    top: 120px;
+    padding: 41px 0 41px 0;
+    transform: rotate(-4deg);
+    height: 105px;
+
+        width: 110%;
+    left: -15px;
+}
+
+.b-title {   
+	position: relative;
+    left: -25px;
+    text-decoration: underline solid #6AB3FC;
+}
+
+.bb-rotate {
+	transform: rotate(4deg);
+}
+
+
+.text{
+    font-size: 13px;
+    font-weight: normal;
+    position: relative;
+    top: 10px;
+    width: 437px;
+    left: 46%;
+    margin-left: -198px;
+    text-align: center;
+}
+
+.blue-link {
+	color: #0C7CEB;
+    position: relative;
+    left: 845px;
+    top: 35px;
+    font-size: 13px;
+}
+
+.blue-link:hover {
+	color: #0956A2
+}
+
+
+
+/* ************************ volunteer **************************** */
+
+.orange-bar {
+	background-color: rgba(241, 155, 43, .19);
+    position: relative;
+    top: 232px;
+    transform: rotate(4deg);
+    padding: 41px 0 41px 0;
+    width: 110%;
+    left: -36px;
+}
+
+.ob-rotate {
+	transform: rotate(-4deg);
+}
+
+.e-title {
+	position: relative;
+	left: -42px;
+	text-decoration: underline solid #F19B2B;
+}
+
+.orange-link{
+	color: #FC930B;
+	position: relative;
+    left: 845px;
+    top: -38px;
+    font-size: 13px;
+}
+
+.orange-link:hover {
+	
+	color: #FFC77E;
+
+}
+
+
+/* Slideshow stuff*/ 
+
+.v-slideshow {
+	width: 80%;
+	position: relative;
+	margin: auto;
+
+
+	display: flex;
+	justify-content: center;
+	
+    left: 30px;
+}
+
+
+.pics-slideshow {
+	display: none;
+	/*display: flex;
+	justify-content: space-between;
+	position: relative;
+    top: 20px;*/
+}
+
+/* I want pic to fade in when new and fade out when old. */
+.fade {
+  
+}
+
+
+.v-pic {
+	
+	        width: 67%;
+    height: 87%;
+    position: relative;
+    top: 42px;
+    left: 120px;
+}
+
+/*copied this offline, might have to update depending on pics. */
+.prev, .next {
+	cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next{
+	right: 248px;
+	background-color: rgba(252, 147, 11, 0.4);
+}
+
+.prev {
+	left: 122px;
+	background-color: rgba(252, 147, 11, 0.4);
+}
+
+.prev:hover, .next:hover {
+	 background-color: rgba(252, 147, 11, 0.7);
+}
+
+/*end of slideshow */
+
+
+/* ************************ committees **************************** */
+
+.committees {
+	background-image: url("../images/Web_drinks.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 620px;
+	width: 110%;
+	position: relative;
+    top: 286px;
+    left: -12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+}
+
+.c-title {
+	position: relative;
+    top: -162px;
+    left: -38px;
+    color: white;
+    font-size: 32px;
+}
+
+#c-box {
+	display: flex;
+	background-color: rgba(255, 255, 255, .69);
+	    position: relative;
+    top: 138px;
+    left: -38px;
+}
+
+.c-groups {
+	margin: 20px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.c-pics {
+	width: 50px;
+	height: 50px;
+}
+
+/* ************************ contact us **************************** */
+
+.contact-container{
+	    position: relative;
+    top: 280px;
+    margin-top: 30px;
+    width: 100%;
+
+}
+
+
+.line {
+	height: 24px;
+
+    position: relative;
+    left: -10px;
+    
+  
+}
+
+.blue-line {
+	background-color: rgba(106, 179, 252, .31);
+	width: 110%
+
+}
+
+.orange-line {
+	background-color: rgba(241, 155, 43, .19);
+	margin-top: 10px;
+	width: 110%;
+
+}
+
+.contact-box {
+	height: 144px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+        position: relative;
+    top: -18px;
+}
+
+.social-media {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	    height: 29px;
+    position: relative;
+    top: 15px;
+}
+
+.sm-pic {
+	width: 50px;
+	height: 50px;
+	    margin: 6px;
+}
+
+.donate {
+	position: relative;
+	top: 20px;
+}
+
+/* ************************ bottom bar **************************** */
+.bottom-bar {
+    position: relative;
+    top: 280px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-logo {
+	padding: 20px;
+	text-align: center;
+	font-size: 10px
+
+}
+
